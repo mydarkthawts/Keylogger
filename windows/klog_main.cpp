@@ -209,7 +209,7 @@ int main()
 	// Check if the system is still booting up
 	while (IsSystemBooting()) 
 	{
-		std::cout << "System is still booting up. Waiting...\n";
+		std::cout << "System is still booting up. Waiting 10 seconds and trying again...\n";
 		Sleep(10000); // Wait for 10 seconds before checking again
 	}
 	// This part of the program is reached once the system has 
